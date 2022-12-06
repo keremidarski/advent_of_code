@@ -1,11 +1,13 @@
-# AOC 2022 Day 01 Part 02
+# AOC 2022 Day 01 Puzzle 02
+
+import re
 
 
 def prep_input():
     dwarfs = []
 
-    with open("./day01.in") as file:
-        data = file.read().split("\n\n")
+    with open("input.txt", "r") as f:
+        data = re.split("(?<!\.)\n\n", f.read())
 
     for dwarf in data:
         dwarfs.append([int(cal) for cal in dwarf.split("\n")])
