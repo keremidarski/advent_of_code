@@ -15,7 +15,6 @@ def track_rope(data):
     visited = {(0, 0): 1}
     head = {"y": 0, "x": 0}
     tail = {"y": 0, "x": 0}
-    y, x = 0, 0
 
     for move in data:
         if move[0] == "U":
