@@ -25,7 +25,7 @@ def get_result(input_file):
 
 
 def main():
-    input_file = "D:/Work/Code/Advent_of_Code/2023/day01/day01.in"
+    input_file = "./day01.in"
     print(get_result(input_file))
 
 
