@@ -1,31 +1,28 @@
 # AOC 2023 Day 01 Part 01
 
 
-def prep_input(input_file):
-    codes = []
+def get_result(input_file):
+    result = 0
 
     with open(input_file) as file:
         for line in file.read().strip().split():
-            numbers = []
-            
+            digits = []
+
             for char in line:
                 if char.isdigit():
-                    numbers.append(char)
+                    digits.append(char)
 
-            if len(numbers) == 1:
-                codes.append(int(numbers[0] + numbers[0]))
-            else:
-                codes.append(int(numbers[0] + numbers[-1]))
+            score = int(digits[0] + digits[-1])
+            result += score
 
-    return codes
+    return result
 
 
 def main():
-    input_file = "./day01.in"
-    codes = prep_input(input_file)
-    print(sum(codes))
+    input_file = "D:/Work/Code/Advent_of_Code/2023/day01/day01.in"
+    print(get_result(input_file))
 
 
 if __name__ == "__main__":
     main()
-  
+            
