@@ -1,7 +1,5 @@
 # AOC 2023 Day 03 Part 01
 
-from pprint import pprint
-
 
 def prep_input(input_file):
     scheme = []
@@ -51,14 +49,12 @@ def is_adjacent(scheme, current_number):
 def get_result(scheme):
     result = 0
     current_number = []
-    still_number = False
 
     for row_index in range(len(scheme)):
         for column_index in range(len(scheme[0])):
             current_cell = scheme[row_index][column_index]
 
             if current_cell.isdigit():
-                still_number = True
                 current_number.append(
                     {"number": current_cell, "point": (row_index, column_index)}
                 )
