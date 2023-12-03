@@ -95,7 +95,7 @@ def get_result(scheme):
 
 
 def main():
-    input_file = "D:/Work/Code/Advent_of_Code/2023/day03/day03.in"
+    input_file = "./day03.in"
     scheme = prep_input(input_file)
 
     print(get_result(scheme))
