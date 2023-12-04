@@ -27,7 +27,7 @@ def get_result(input_file):
 
 
 def main():
-    input_file = "/Users/administrator/code/misc/aoc/day04/day04.in"
+    input_file = "./day04.in"
     print(get_result(input_file))
 
 
