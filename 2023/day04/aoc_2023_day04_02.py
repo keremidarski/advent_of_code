@@ -49,7 +49,7 @@ def count_cards(games):
 
 
 def main():
-    input_file = "/Users/administrator/code/misc/aoc/day04/day04.in"
+    input_file = "./day04.in"
     games = prep_input(input_file)
     count = count_cards(games)
     print(count)
